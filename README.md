@@ -1,3 +1,8 @@
+这个分支基于strahe/dnspod-ddns
+只会做可用性上的修改
+
+更新日志：
+2019年7月18日 加入taobao方式的ip获取并且更新直接IP方式获取
 
 # dnspod-ddns
 
@@ -48,7 +53,7 @@ docker run -d \
     --restart=always \
     --name=dnspod-ddns \
     -v your_ddnsrc_file_path:/etc/dnspod/ddnsrc \
-     strahe/dnspod-ddns
+     zhaoyan42/rpi-dnspod-ddns
  ```
 
 通过传递环境变量的方式:
@@ -63,16 +68,10 @@ docker run -d \
     -e "interval=10" \
     -e "email=your@email.com" \
     -e "ip_count=1" \
-    strahe/dnspod-ddns
+    zhaoyan42/rpi-dnspod-ddns
 ```
 
 ### 测试环境
 
 以下为测试通过的环境：
-- [x] Windows 10
-- [x] Windows Server 2016
-- [x] Debian 4.9.8
-
-尚未测试，应该能适配的环境：
-- [ ] Centos
-- [ ] Ubuntu
+- [x] Resbain
